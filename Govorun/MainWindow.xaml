@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Govorun"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="300" Width="520">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Label>Address:</Label>
+            <TextBox x:Name="addressTxtBox" Background="#FFF0EFEF" Margin="3" MinWidth="120" Text="127.0.0.1"></TextBox>
+            <Label>Port:</Label>
+            <TextBox x:Name="portTxtBox" Background="#FFF0EFEF" Margin="3" MinWidth="120" Text="3300"></TextBox>
+        </StackPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Button Margin="3" Padding="15,0" DockPanel.Dock="Right" Click="SendBtnClick" Background="#FFB6EE73">Send</Button>
+            <TextBox x:Name="msgTxtBox" Text="Write your message here..." Margin="3" Height="26"></TextBox>
+        </DockPanel>
+        <ListBox x:Name="historyList" Margin="0,20,0,0" Padding="5" Background="#FFC4DFEB" BorderThickness="3,3,3,3" BorderBrush="#FF92A3AC" Height="199" Width="517" >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel VerticalAlignment="Bottom"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+    </DockPanel>
 </Window>
