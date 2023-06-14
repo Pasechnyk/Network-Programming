@@ -18,13 +18,13 @@
             </Grid.RowDefinitions>
 
             <Label VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="0">To:</Label>
-            <TextBox Name="toTxtBox" Margin="5" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0"></TextBox>
+            <TextBox Name="toTxtBox" Margin="5" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0" Background="#FFE7E5E5"></TextBox>
 
             <Label VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="1">Subject:</Label>
-            <TextBox Name="subjectTxtBox" Margin="5" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"></TextBox>
+            <TextBox Name="subjectTxtBox" Margin="5" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Background="#FFE5E2E2"></TextBox>
         </Grid>
-        <TextBlock DockPanel.Dock="Top" TextAlignment="Center" FontWeight="Bold" FontSize="32">Text</TextBlock>
-        <Button Click="Button_Click" DockPanel.Dock="Bottom" Padding="8" FontSize="20" FontWeight="Bold">Send</Button>
-        <TextBox Name="bodyTxtBox" Margin="5" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+        <TextBlock DockPanel.Dock="Top" TextAlignment="Center" FontSize="32">Enter your text here:</TextBlock>
+        <Button Click="Button_Click" DockPanel.Dock="Bottom" Padding="8" FontSize="20" FontWeight="Bold" Background="#FF5C9199">Send</Button>
+        <TextBox Name="bodyTxtBox" Margin="5" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFCEDDD6"></TextBox>
     </DockPanel>
 </Window>

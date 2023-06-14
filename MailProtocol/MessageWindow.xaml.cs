@@ -15,16 +15,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+// Task - Create Mail Sender application using SMTP
+
 namespace MailProtocol
 {
-    /// <summary>
-    /// Interaction logic for MessageWindow.xaml
-    /// </summary>
     public partial class MessageWindow : Window
     {
         OpenFileDialog dialog = new OpenFileDialog();
+
         const string myMailAddress = "tmvlad33@gmail.com";
         const string accountPassword = "gxknljmktrlthlyx";
+
         public MessageWindow()
         {
             InitializeComponent();
@@ -45,9 +46,10 @@ namespace MailProtocol
             var result = MessageBox.Show("Do you want to attach a file?", "Attach File", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
+                MessageBox.Show("You can now attach multiple files!");
                 OpenFileDialog dialog = new OpenFileDialog();
 
-                //multiple files
+                //multiple files attachment
                 dialog.Multiselect = true;
 
                 if (dialog.ShowDialog() == true)
