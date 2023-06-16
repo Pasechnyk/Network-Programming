@@ -24,7 +24,7 @@
             <TextBox Name="subjectTxtBox" Margin="5" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Background="#FFE5E2E2"></TextBox>
         </Grid>
         <TextBlock DockPanel.Dock="Top" TextAlignment="Center" FontSize="32">Enter your text here:</TextBlock>
-        <Button Click="Button_Click" DockPanel.Dock="Bottom" Padding="8" FontSize="20" FontWeight="Bold" Background="#FF5C9199">Send</Button>
+        <Button Click="SendMailClick" DockPanel.Dock="Bottom" Padding="8" FontSize="20" FontWeight="Bold" Background="#FF5C9199">Send</Button>
         <TextBox Name="bodyTxtBox" Margin="5" TextWrapping="Wrap" AcceptsReturn="True" Background="#FFCEDDD6"></TextBox>
     </DockPanel>
 </Window>

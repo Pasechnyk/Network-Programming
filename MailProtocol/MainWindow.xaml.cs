@@ -38,7 +38,7 @@ namespace MailProtocol
                 MessageBox.Show("Access denied: \n - fields are empty.");
                 return;
             }
-            if (password == "gxknljmktrlthlyx")
+            if (password == "nastya")
             {
 
                 MessageWindow form = new MessageWindow();

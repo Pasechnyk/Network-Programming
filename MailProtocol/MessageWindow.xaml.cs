@@ -23,15 +23,15 @@ namespace MailProtocol
     {
         OpenFileDialog dialog = new OpenFileDialog();
 
-        const string myMailAddress = "tmvlad33@gmail.com";
-        const string accountPassword = "gxknljmktrlthlyx";
+        const string myMailAddress = "pasechnyknastya@gmail.com";
+        const string accountPassword = "nastya";
 
         public MessageWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SendMailClick(object sender, RoutedEventArgs e)
         {
             // create new mail
             MailMessage mail = new MailMessage(myMailAddress, toTxtBox.Text)
@@ -44,9 +44,11 @@ namespace MailProtocol
 
             // add attachments
             var result = MessageBox.Show("Do you want to attach a file?", "Attach File", MessageBoxButton.YesNo);
+
             if (result == MessageBoxResult.Yes)
             {
                 MessageBox.Show("You can now attach multiple files!");
+
                 OpenFileDialog dialog = new OpenFileDialog();
 
                 //multiple files attachment
