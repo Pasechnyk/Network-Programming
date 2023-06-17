@@ -6,7 +6,49 @@
         xmlns:local="clr-namespace:MailClient"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+
+    <Grid DockPanel.Dock="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Background="#FFEDECEB" BorderBrush="#FF272727" BorderThickness="0,0,3,0"></Border>
+
+        <Label Grid.Row="1" HorizontalAlignment="Center" FontSize="20" Margin="0,15,0,0" VerticalAlignment="Center">Authorise with your Mail:</Label>
+
+        <DockPanel Grid.Row="2" Margin="50,0,0,0">
+            <Label Height="30" BorderThickness="0,0,0,0" FontSize="14" >Login:</Label>
+            <TextBox Name="loginTxt" Width="200" Height="20" Background="White"></TextBox>
+        </DockPanel>
+
+        <DockPanel Grid.Row="3" Margin="50,0,0,0">
+            <Label Height="30" BorderThickness="0,0,0,0" FontSize="14" >Password:</Label>
+            <PasswordBox Name="passwordTxt" Width="200" Height="20" Margin="0,0,20,0" Background="White"></PasswordBox>
+        </DockPanel>
+
+        <DockPanel Grid.Row="4">
+            <Button Name="logInBtn" Margin="90,0,0,0" Width="60" Height="30" Click="LogInBtnClick" FontSize="14">Log In</Button>
+            <Button Name="exitBtn" Width="60" Height="30" Click="ExitBtnClick" FontSize="14">Close</Button>
+        </DockPanel>
+
+        <Border Grid.Column="1" Grid.RowSpan="6" Background="#FFF6F6F6"></Border>
+
+        <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Mail Organiser</Label>
+
+        <Button Name="showAllBtn" Grid.Row="1" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE9E8E8" FontSize="14" Click="ShowAllBtnClick">Show Messages</Button>
+        <Button Name="showDraftBtn" Grid.Row="2" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE9E8E8" FontSize="14" Click="ShowDraftBtnClick">Show Drafts</Button>
+        <Button Name="showJunkBtn" Grid.Row="3" Grid.Column="1" Height="30" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFE9E8E8" FontSize="14" Click="ShowJunkBtnClick">Show Junk Emals</Button>
+
+        <ListBox Name="mailListBox" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" BorderBrush="#FF5B5B5B" BorderThickness="2,2,2,2"></ListBox>
 
     </Grid>
 </Window>
