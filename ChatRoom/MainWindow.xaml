@@ -1,0 +1,27 @@
+﻿<Window x:Class="ChatRoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatRoom"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top" Background="#FFE3EDF1">
+            <Button Click="JoinBtnClick" FontSize="14">Join</Button>
+            <Button Click="LeaveBtnClick" FontSize="14">Leave</Button>
+            <Label FontSize="14">IP:</Label>
+            <TextBox Name="ipTxtBox" FontSize="14" MinWidth="100">127.0.0.1</TextBox>
+            <Label FontSize="14">Port:</Label>
+            <TextBox Name="portTxtBox" FontSize="14" MinWidth="50">3737</TextBox>
+            <Label FontSize="14">Name:</Label>
+            <TextBox Name="nameTxtBox" FontSize="14" MinWidth="60"></TextBox>
+        </ToolBar>
+        <DockPanel Margin="10,0,10,10" DockPanel.Dock="Bottom">
+            <Button IsDefault="True" Margin="10,0,0,0" Padding="20,5" DockPanel.Dock="Right" Click="SendBtnClick" Background="#FFCCD0D0" FontSize="14">Send</Button>
+            <TextBox Text="Lorem Ipsum!" FontSize="14" x:Name="msgTxtBox" VerticalContentAlignment="Center"></TextBox>
+        </DockPanel>
+        <ListBox Name="msgList" Margin="10" Background="#FFDDEAEF"></ListBox>
+    </DockPanel>
+</Window>
