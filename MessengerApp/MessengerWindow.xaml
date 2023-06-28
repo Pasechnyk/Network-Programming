@@ -1,0 +1,52 @@
+﻿<Window x:Class="MessengerApp.MessengerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessengerApp"
+        mc:Ignorable="d"
+        Title="MessengerWindow" Height="450" Width="780">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="200" Height="50" Grid.Column="0" Background="#FFA5B0DA" BorderBrush="#FF444444" BorderThickness="1,1,1,1">
+            <Label Margin="10" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="14" FontWeight="Bold">List of users:</Label>
+        </Border>
+        
+        <ListBox Name="usersListBox" HorizontalAlignment="Center" VerticalAlignment="Stretch" Grid.Column="0" Height="160" Margin="0,0,0,140" Width="190" Background="#FFE4EAF1">
+            
+        </ListBox>
+
+        <Border HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0,90,0,0" Width="200" Height="40" Grid.Column="0" Background="#FFA4ADDD" BorderBrush="#FF444444" BorderThickness="1,1,1,1">
+            <Label Margin="5" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="12" FontWeight="Bold">Chat Rooms:</Label>
+        </Border>
+ 
+
+        <DockPanel Grid.Column="2">
+            <ToolBar DockPanel.Dock="Top" Background="#FFAEB5E5">
+                <Label FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">IP:</Label>
+                <TextBox Name="ipTxtBox" FontSize="14" MinWidth="100">127.0.0.1</TextBox>
+                <Label FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Port:</Label>
+                <TextBox Name="portTxtBox" FontSize="14" MinWidth="50">3737</TextBox>
+                <Label FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Name:</Label>
+                <TextBox Margin="5" Name="nameTxtBox" FontSize="14" MinWidth="60" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFF6F5F5"></TextBox>
+                <Button Click="JoinBtnClick" FontSize="14" FontWeight="Bold">Join</Button>
+                <Button Click="LeaveBtnClick" FontSize="14" FontWeight="Bold">Leave</Button>
+            </ToolBar>
+            <DockPanel Margin="10,0,10,10" DockPanel.Dock="Bottom">
+                <Button IsDefault="True" Margin="10,0,0,0" Padding="20,5" DockPanel.Dock="Right" Click="SendBtnClick" Background="#FF8198D1" FontSize="14">Send</Button>
+                <TextBox Text="Send text . . ." FontSize="14" x:Name="msgTxtBox" VerticalContentAlignment="Center"></TextBox>
+            </DockPanel>
+            <ListBox Name="msgList" Margin="10" Background="#FFDDE0EF"></ListBox>
+        </DockPanel>
+    </Grid>
+    
+</Window>

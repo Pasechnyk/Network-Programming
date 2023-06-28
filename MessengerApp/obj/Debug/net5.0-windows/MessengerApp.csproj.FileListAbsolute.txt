@@ -1,0 +1,5 @@
+C:\Users\Настя\source\repos\MessengerApp\obj\Debug\net5.0-windows\MessengerApp.csproj.AssemblyReference.cache
+C:\Users\Настя\source\repos\MessengerApp\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Настя\source\repos\MessengerApp\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Настя\source\repos\MessengerApp\obj\Debug\net5.0-windows\MessengerApp_MarkupCompile.cache
+C:\Users\Настя\source\repos\MessengerApp\obj\Debug\net5.0-windows\MessengerApp_MarkupCompile.lref

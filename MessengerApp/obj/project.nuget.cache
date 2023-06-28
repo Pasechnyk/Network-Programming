@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "n70vu+MUMwn3098cL6N+4q220GzyQpsWRQqOlcve7K7jdP3F3QcUBbY+FA9cPiu/LEdYdSluu7CUzWK8+X0jHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Настя\\source\\repos\\MessengerApp\\MessengerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Настя\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Настя\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Настя\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
