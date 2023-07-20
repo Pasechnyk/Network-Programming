@@ -1,0 +1,16 @@
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.exe
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.deps.json
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.runtimeconfig.json
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.runtimeconfig.dev.json
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.dll
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\ref\OrderPizza.dll
+C:\Users\Настя\source\repos\OrderPizza\bin\Debug\net5.0\OrderPizza.pdb
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.csproj.AssemblyReference.cache
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.AssemblyInfoInputs.cache
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.AssemblyInfo.cs
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.csproj.CoreCompileInputs.cache
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.dll
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\ref\OrderPizza.dll
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.pdb
+C:\Users\Настя\source\repos\OrderPizza\obj\Debug\net5.0\OrderPizza.genruntimeconfig.cache
