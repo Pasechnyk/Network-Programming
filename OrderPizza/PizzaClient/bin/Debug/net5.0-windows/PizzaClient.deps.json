@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "PizzaClient/1.0.0": {
+        "dependencies": {
+          "Collection": "1.0.0"
+        },
+        "runtime": {
+          "PizzaClient.dll": {}
+        }
+      },
+      "Collection/1.0.0": {
+        "runtime": {
+          "Collection.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PizzaClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Collection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
